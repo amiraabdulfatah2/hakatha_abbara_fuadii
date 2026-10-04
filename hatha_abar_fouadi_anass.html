@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>هكذا عبر فؤادي | أنس بن النضر</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:#f6f1e8;color:#263b32;font-family:Arial,sans-serif}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:35px 18px}
+.card{max-width:820px;width:100%;background:#fffdf8;border:1px solid #ded4c2;border-radius:24px;padding:30px;text-align:center;box-shadow:0 10px 30px #263b3212}
+h1,h2{font-family:Georgia,serif}h1{font-size:44px;color:#254b3d}h2{font-size:32px}
+p{font-size:18px;line-height:2}.small{color:#756d62;font-size:15px}
+button{border:0;border-radius:28px;padding:13px 24px;background:#315b4b;color:white;font-weight:bold;font-size:16px;cursor:pointer;margin:7px}
+.badge{display:inline-block;border:1px solid #bba989;border-radius:50%;padding:17px 12px;color:#735d3e;background:#f3eadb}
+.quote{font-family:Georgia,serif;font-size:24px;color:#6c5639}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:20px 0}
+.box{padding:20px;border:1px solid #ddd0bb;border-radius:18px;background:#faf6ee;cursor:pointer}
+.hidden{display:none}@media(max-width:600px){h1{font-size:36px}h2{font-size:28px}p{font-size:16px}.grid{grid-template-columns:1fr}}
+footer{text-align:center;background:#263b32;color:white;padding:22px}
+</style>
+</head>
+<body>
+
+<section id="start"><div class="card">
+<div class="badge">هكذا عبر فؤادي</div>
+<h1>أنس بن النضر رضي الله عنه</h1>
+<p>رحلة قصيرة في موقفٍ من مواقف الإيمان والثبات.</p>
+<p class="small">مشروع طالبة — مسار جذور</p>
+<button onclick="go('intro')">ابدئي الرحلة ←</button>
+</div></section>
+
+<section id="intro"><div class="card">
+<h2>من هو أنس بن النضر؟</h2>
+<p>صحابي جليل من الأنصار، عُرف بقوة إيمانه وصدقه وشجاعته، وكان له موقف عظيم في يوم أُحد.</p>
+<p class="quote">لكن قصته ليست مجرد معلومات… بل موقف جعلني أتوقف وأفكر.</p>
+<button onclick="go('badr')">اكتشفي القصة ←</button>
+</div></section>
+
+<section id="badr"><div class="card">
+<h2>قبل أُحد</h2>
+<p>لم يشهد أنس بن النضر رضي الله عنه بدرًا، فحزن لذلك، وقال إنه إن شهد الله له مشهدًا آخر فسيرى ما يصنع.</p>
+<p>ثم جاءت غزوة أُحد…</p>
+<button onclick="go('uhud')">ماذا حدث في أُحد؟</button>
+</div></section>
+
+<section id="uhud"><div class="card">
+<h2>في يوم أُحد</h2>
+<p>عندما اضطربت الصفوف، ظهر ثبات أنس بن النضر رضي الله عنه وشجاعته.</p>
+<p class="small">اضغطي على الرموز لاكتشاف الدروس.</p>
+<div class="grid">
+<div class="box" onclick="show('صدق الإيمان يظهر في المواقف، لا في الكلام وحده.')">🌿<br><b>صدق الإيمان</b></div>
+<div class="box" onclick="show('من دروس قصته: الصدق مع الله والوفاء بما عاهد الإنسان عليه.')">🤍<br><b>الوفاء</b></div>
+<div class="box" onclick="show('الشجاعة تعني الثبات على الحق عندما يكون الموقف صعبًا.')">⭐<br><b>الثبات والشجاعة</b></div>
+<div class="box" onclick="show('قصته تذكرنا بأن الإيمان يظهر في العمل والتضحية.')">🌙<br><b>التضحية</b></div>
+</div>
+<p id="result" class="hidden"></p>
+<button onclick="go('heart')">ماذا تركت قصته في قلبي؟</button>
+</div></section>
+
+<section id="heart"><div class="card">
+<h2>هكذا عبر فؤادي</h2>
+<p>اخترت قصة أنس بن النضر رضي الله عنه لأنها جعلتني أفكر في معنى أن يكون الإيمان شيئًا يظهر في المواقف، وليس مجرد كلمات.</p>
+<p>أكثر ما أثر فيّ هو ثباته وصدقه؛ فقد جعلني أتساءل: <b>هل يظهر ما أؤمن به في أفعالي؟</b></p>
+<p>وبعد أن عرفت قصته، أريد أن أتعلم الثبات، وأن أكون صادقة مع الله في أقوالي وأعمالي، حتى في المواقف الصغيرة.</p>
+<p class="quote">ليست العبرة أن نعرف القصة فقط، بل أن نتركها تغيّر شيئًا فينا.</p>
+<button onclick="go('end')">إلى الخاتمة</button>
+</div></section>
+
+<section id="end"><div class="card">
+<div class="badge">هكذا عبر فؤادي</div>
+<h2>شكرًا لرحلتك معنا 🌿</h2>
+<p>اللهم ارزقنا صدق الإيمان والثبات على الحق.</p>
+<p class="small">أميرة عبدالفتاح<br>من مسار جذور</p>
+<button onclick="go('start')">↺ البداية</button>
+</div></section>
+
+<footer>مشروع «هكذا عبر فؤادي» — مسار جذور</footer>
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function show(t){let r=document.getElementById('result');r.textContent=t;r.className='';r.style.padding='15px';r.style.background='#f3eadb';r.style.borderRadius='15px'}
+</script>
+</body>
+</html>
